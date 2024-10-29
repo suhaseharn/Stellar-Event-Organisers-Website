@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>techfest</title>
+<center>
+        <style>   
+            .navbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: -10px;
+                background-color:rgba(0, 0, 0, 0.5) ;
+                color: #fff;
+              }
+              .nav-links a {
+                color: #fff;
+              }
+            
+              
+              /* NAVBAR MENU */
+              .menu {
+                display: flex;
+                gap: 1em;
+                font-size: 18px;
+              }
+              
+              .menu li:hover {
+                background-color: #535379  ;
+                border-radius: 5px;
+                transition: 0.3s ease;
+              }
+              
+              .menu li {
+                padding: 5px 10px;
+              }
+              
+              /* DROPDOWN MENU */
+              .services {
+                position: relative; 
+              }
+              
+              .dropdown {
+                background-color: #535379  ;
+                padding: 1em 0;
+                position: absolute; /*WITH RESPECT TO PARENT*/
+                display: none;
+                border-radius: 8px;
+                top: 35px;
+              }
+              
+              .dropdown li + li {
+                margin-top: 10px;
+              }
+              
+              .dropdown li {
+                padding: 0.5em 1em;
+                width: 8em;
+                text-align: center;
+              }
+              
+              .dropdown li:hover {
+                background-color: black;
+              }
+              
+              .services:hover .dropdown {
+                display: block;
+              }
+                      a {
+                        text-decoration: none;
+                      }
+                      
+                      li {
+                        list-style: none;
+                      }  
+                        h1{
+                            font-family: georgia;
+                            text-align: center;
+                            color: white;
+                        }
+        
+            .sidenav {
+                height: 100%;
+                width: 160px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+
+            
+        
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+        
+            .sidenav a:hover {
+                color:#D7B2DA  ;
+            }
+        
+            .main {
+                margin-left: 160px;
+                padding: 0px 10px;
+            }
+          
+            h1{
+                font-family: georgia;
+                text-align: center;
+                color: white;
+                font-size: 30px;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image:url('https://img.freepik.com/free-vector/gradient-geometric-blue-technology-background_52683-78527.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }    
+             
+            section .techfest {
+                width: 100%;
+                height: 100%;
+                float: left;
+                padding: 50px;
+               
+                box-sizing: border-box;
+            }   
+
+            section .techfest .content {
+
+                color: #fff;
+                font-size:17px;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 40px;
+                transition: .5s;
+                text-align: justify;
+            }
+
+                section .techfest .content h1 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 30px;
+                    text-transform: uppercase;
+                }
+                section .techfest .content:hover {
+                    background: #535379;
+                }
+            .suha {
+                        border: 5px solid #ff7f50; /* Add a border with a coral color */
+                        border-radius: 10px; /* Rounded corners */
+                        box-shadow: 5px 5px 10px #888888; /* Add a shadow */
+                        margin: 10px; /* Add some margin around the images */
+                        filter: grayscale(50%); /* Apply grayscale effect */
+                        transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+                      }
+                      
+            .suha:hover {
+                        transform: scale(1.1); /* Enlarge the image on hover */
+                        filter: grayscale(0%); /* Remove grayscale effect on hover */
+                      }
+        section .services {
+                        width: 100%;
+                        height: 40%;
+                        float: left;
+                        padding: 50px;
+                        
+                        box-sizing: border-box;
+                    }   
+        
+                    section .services .content {
+        
+                        color: #fff;
+                        font-size:17px;
+                        background: rgba(0, 0, 0, 0.5);
+                        padding: 40px;
+                        transition: .5s;
+                        text-align: justify;
+                    }
+        
+                    section .services .content h1 {
+                            margin: 0;
+                            padding: 0;
+                            font-size: 30px;
+                            text-transform: uppercase;
+                        }
+                        section .services .content:hover {
+                            background: #D7B2DA;}
+
+                            .bday {
+                                border: 5px solid #ff7f50; /* Add a border with a coral color */
+                                border-radius: 10px; /* Rounded corners */
+                                box-shadow: 5px 5px 10px #888888; /* Add a shadow */
+                                margin: 10px; /* Add some margin around the images */
+                                filter: grayscale(50%); /* Apply grayscale effect */
+                                transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+                              }
+                              
+                    .bday:hover {
+                                transform: scale(1.1); /* Enlarge the image on hover */
+                                filter: grayscale(0%); /* Remove grayscale effect on hover */
+                              }
+                    
+                    </style>
+                </head>
+                
+<body>
+    <nav class="navbar">
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            
+    
+            <li class="services">
+              <a href="/">Services</a>
+    
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="/">WEDDING </a></li>
+                <li><a href="/">BIRTHDAY</a></li>
+                <li><a href="/">TECH FEST</a></li>
+                <li><a href="/">MUSICAL CONCERT</a></li>
+              </ul>
+    
+            </li>
+    
+            <li><a href="/">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+
+
+    <section>
+            <div class="techfest">
+                <div class="content">
+                                <h1>
+                                    TECH FEST
+                                </h1>
+                                <br> <br>
+                                <p> 
+                                    As Stellar Event Organisers, we excel in curating cutting-edge Tech Fests, 
+                                    seamlessly blending innovation and excitement. With meticulous planning
+                                     and a passion for technology, we create dynamic platforms that 
+                                     foster collaboration, showcase breakthroughs, and inspire the tech 
+                                     community. Elevate your event experience with our unparalleled
+                                      expertise in orchestrating tech-centric celebrations.
+                                </p>
+                            </div>
+        </div><br>
+                        
+                        <img class="suha" src="https://kcis.iiit.ac.in/img/recent_highlights/dec/Techfest-IITB-3.jpg" width="300px" height="300px">
+                        <img class="suha" src="https://i.ytimg.com/vi/mUKr9YvLO8I/maxresdefault.jpg" width="300px" height="300px"> 
+
+    </section>
+
+    <section>
+        <div class="techfest">
+            <div class="content">
+    
+                            <p> 
+                                We empower students to explore diverse avenues for participation,
+                                 enriching their skills during the tech fest. By introducing captivating 
+                                 activities and igniting their enthusiasm, we cultivate an 
+                                 environment conducive to skill enhancement and spirited engagement, 
+                                fostering a dynamic experience for all involved.
+                            </p>
+                              <p>
+                                We provide cultural events for schools, colleges, and companies,
+                                 in addition to tech events, aiming to 
+                                enhance enthusiasm and foster social skills to a significant degree.
+
+                              </p>
+                        </div>
+    </div><br>
+
+                        <img class="suha" src="https://www.uts.edu.au/sites/default/files/styles/container_width_large_x1/public/2023-03/FEIT-double-tile-Tech-Festival-showcase-2022-1760px.jpg?itok=Iy6hoEdb" width="300px" height="300px">
+                        <img class="suha" src="https://darshan.ac.in/U01/Page/30---16-06-2021-03-58-38.jpeg" width="300px" height="300px"> <br>
+                        <img class="suha" src="https://assets.telegraphindia.com/telegraph/2023/Mar/1679568266_organizing-committee-behind-unitron23-1.jpg" width="300px" height="300px">
+                        <img class="suha" src="https://gdgoenkaglobal.com/wp-content/uploads/2023/01/Tech-Fest-was-held-on-2nd-December-2022-4.jpeg" width="300px" height="300px"><br>
+                    </section>
+
+                    <footer> Copyright to Stellar Event Organisers 2024 </footer>
+           
+    
+                </body>
+

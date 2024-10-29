@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>wedding</title>
+<center>
+        <style>   
+            .navbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: -10px;
+                background-color:rgba(0, 0, 0, 0.5) ;
+                color: #fff;
+              }
+              .nav-links a {
+                color: #fff;
+              }
+            
+              
+              /* NAVBAR MENU */
+              .menu {
+                display: flex;
+                gap: 1em;
+                font-size: 18px;
+              }
+              
+              .menu li:hover {
+                background-color: #D7B2DA  ;
+                border-radius: 5px;
+                transition: 0.3s ease;
+              }
+              
+              .menu li {
+                padding: 5px 10px;
+              }
+              
+              /* DROPDOWN MENU */
+              .services {
+                position: relative; 
+              }
+              
+              .dropdown {
+                background-color: #D7B2DA  ;
+                padding: 1em 0;
+                position: absolute; /*WITH RESPECT TO PARENT*/
+                display: none;
+                border-radius: 8px;
+                top: 35px;
+              }
+              
+              .dropdown li + li {
+                margin-top: 10px;
+              }
+              
+              .dropdown li {
+                padding: 0.5em 1em;
+                width: 8em;
+                text-align: center;
+              }
+              
+              .dropdown li:hover {
+                background-color: #4c9e9e;
+              }
+              
+              .services:hover .dropdown {
+                display: block;
+              }
+                      a {
+                        text-decoration: none;
+                      }
+                      
+                      li {
+                        list-style: none;
+                      }  
+                        h1{
+                            font-family: georgia;
+                            text-align: center;
+                            color: white;
+                        }
+        
+            .sidenav {
+                height: 100%;
+                width: 160px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+        
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+        
+            .sidenav a:hover {
+                color:#D7B2DA  ;
+            }
+        
+            .main {
+                margin-left: 160px;
+                padding: 0px 10px;
+            }
+          
+            h1{
+                font-family: georgia;
+                text-align: center;
+                color: black;
+                font-size: 30px;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image:url('https://png.pngtree.com/background/20230411/original/pngtree-free-download-pastel-yellow-pink-purple-gold-marble-background-picture-image_2387170.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }    
+             
+            section .wedding {
+                width: 100%;
+                height: 100%;
+                float: left;
+                padding: 50px;
+               
+                box-sizing: border-box;
+            }   
+
+            section .wedding .content {
+
+                color: #fff;
+                font-size:17px;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 40px;
+                transition: .5s;
+                text-align: justify;
+            }
+
+                section .wedding .content h1 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 30px;
+                    text-transform: uppercase;
+                }
+                section .wedding .content:hover {
+                    background: #D7B2DA;
+                }
+            .suha {
+                        border: 5px solid #ff7f50; /* Add a border with a coral color */
+                        border-radius: 10px; /* Rounded corners */
+                        box-shadow: 5px 5px 10px #888888; /* Add a shadow */
+                        margin: 10px; /* Add some margin around the images */
+                        filter: grayscale(50%); /* Apply grayscale effect */
+                        transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+                      }
+                      
+            .suha:hover {
+                        transform: scale(1.1); /* Enlarge the image on hover */
+                        filter: grayscale(0%); /* Remove grayscale effect on hover */
+                      }
+        section .services {
+                        width: 100%;
+                        height: 40%;
+                        float: left;
+                        padding: 50px;
+                        
+                        box-sizing: border-box;
+                    }   
+        
+                    section .services .content {
+        
+                        color: #fff;
+                        font-size:17px;
+                        background: rgba(0, 0, 0, 0.5);
+                        padding: 40px;
+                        transition: .5s;
+                        text-align: justify;
+                    }
+        
+                    section .services .content h1 {
+                            margin: 0;
+                            padding: 0;
+                            font-size: 30px;
+                            text-transform: uppercase;
+                        }
+                        section .services .content:hover {
+                            background: #D7B2DA;}
+
+                            .bday {
+                                border: 5px solid #ff7f50; /* Add a border with a coral color */
+                                border-radius: 10px; /* Rounded corners */
+                                box-shadow: 5px 5px 10px #888888; /* Add a shadow */
+                                margin: 10px; /* Add some margin around the images */
+                                filter: grayscale(50%); /* Apply grayscale effect */
+                                transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+                              }
+                              
+                    .bday:hover {
+                                transform: scale(1.1); /* Enlarge the image on hover */
+                                filter: grayscale(0%); /* Remove grayscale effect on hover */
+                              }
+                    </style>
+                </head>
+                
+<body>
+    <nav class="navbar">
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            
+    
+            <li class="services">
+              <a href="/">Services</a>
+    
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="">WEDDING </a></li>
+                <li><a href="/">BIRTHDAY</a></li>
+                <li><a href="/">TECH FEST</a></li>
+                <li><a href="/">MUSICAL CONCERT</a></li>
+              </ul>
+    
+            </li>
+    
+            <li><a href="/">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+
+
+    <section>
+            <div class="wedding">
+                <div class="content">
+                                <h1>
+                                    WEDDING PLANNERS
+                                </h1>
+                                <p> 
+                                    At Stellar Event Organizers, we understand that your wedding day
+                                     is one of the most important and cherished moments of your life. 
+                                     It's a celebration of love, commitment, and the beginning of a
+                                      beautiful journey together. Our dedicated wedding section is here 
+                                      to help you turn your dream wedding into a reality. With our years 
+                                      of experience and passion for creating unforgettable moments,
+                                     we are your trusted partner in crafting the perfect wedding day.
+                                </p>
+                            </div>
+        </div><br>
+                        
+                        <img class="suha" src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2VkZGluZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80" width="300px" height="300px">
+                        <img class="suha" src="https://images.unsplash.com/photo-1587271636175-90d58cdad458?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGluZGlhbiUyMHdlZGRpbmd8ZW58MHx8MHx8fDA%3D&w=1000&q=80" width="300px" height="300px"> 
+                        <img class="suha" src="https://cdn.greenvelope.com/blog/wp-content/uploads/Wedding-reception.jpeg" width="300px" height="300px"><br>
+                        <img class="suha" src="https://www.paperlesspost.com/blog/wp-content/uploads/080822_Blog_DecorationsForAnOutdoorWedding_01-hero.png" width="300px" height="300px">
+                        <img class="suha" src="https://www.brides.com/thmb/YmbgQGVP72ox-iL3wARX2BvY6Kc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__brides__proteus__5bb64a4ab2e7ef506361bb51__11-57fb9d6a4fbb4a43a0cad00bcc7fb6c9.jpeg" width="300px" height="300px">
+                        <img class="suha" src="https://www.brides.com/thmb/Faec-uueShu_v0McLdFsLoGILHs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sq-ef302a5556ab49ba9cbdd496a0a5249b.jpg" width="300px" height="300px"><br>
+                    </section>
+
+    <section>
+
+            <div class="services">
+                <div class="content">
+                    <h1>
+                        BIRTHDAY PARTIES
+                    </h1>
+                    <p> 
+                        At Stellar Event Organisers, we believe that every birthday
+                         is a milestone worth celebrating. Whether you're planning a birthday party 
+                         for a child, a teenager, or an adult, we are here to make your special day truly stellar.
+                          Our dedicated team of event planners and decorators is committed to turning your
+                         vision into reality, creating unforgettable memories that will last a lifetime.
+                    </p>
+                </div>
+            </div>
+                <img class="bday" src="https://content.jdmagicbox.com/comp/raipur-chhattisgarh/a1/9999px771.x771.220219123703.l4a1/catalogue/party-haat-avanti-vihar-raipur-chhattisgarh-balloon-decorators-4wlmspgd58.jpg" width="300px" height="300px">
+                    <img class="bday"src="https://3.imimg.com/data3/GW/GP/MY-10424193/17-500x500.jpg" width="300px" height="300px">
+                    <img class="bday" src="https://birthdayinspire.com/wp-content/uploads/2016/06/Masquerade-Ball-Party-Theme.jpg" width="300px" height="300px">    
+                    <img class="bday" src="https://cdn.media.amplience.net/i/partycity/birthday-party-activities-adults?fmt=auto&qlt=default&fmt.jp2.qlt=85&w=820&sm=aspect&aspect=16:9" width="300px" height="300px">
+                    <img class="bday" src="https://backyardville.b-cdn.net/wp-content/uploads/2022/11/adult-birthday-party-800x534.jpg" width="300px" height="300px">
+                    <img class="bday" src="https://i.pinimg.com/236x/a6/b7/d5/a6b7d5af8c5a4a73eb923889f7f3ac1b.jpg" width="300px" height="300px">
+            </section>
+    
+                </body>
+

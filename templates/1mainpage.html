@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Event Management </title>
+  
+ <style>
+        
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: -10px;
+        background-color:rgba(0, 0, 0, 0.5) ;
+        color: #fff;
+      }
+      .nav-links a {
+        color: #fff;
+      }
+    
+      
+      /* NAVBAR MENU */
+      .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+      }
+      
+      .menu li:hover {
+        background-color: #8a4b08;
+        border-radius: 5px;
+        transition: 0.3s ease;
+      }
+      
+      .menu li {
+        padding: 5px 10px;
+      }
+      
+      /* DROPDOWN MENU */
+      .services {
+        position: relative; 
+      }
+      
+      .dropdown {
+        background-color: #8a4b08;
+        padding: 1em 0;
+        position: absolute; /*WITH RESPECT TO PARENT*/
+        display: none;
+        border-radius: 8px;
+        top: 35px;
+      }
+      
+      .dropdown li + li {
+        margin-top: 10px;
+      }
+      
+      .dropdown li {
+        padding: 0.5em 1em;
+        width: 8em;
+        text-align: center;
+      }
+      
+      .dropdown li:hover {
+        background-color: #4c9e9e;
+      }
+      
+      .services:hover .dropdown {
+        display: block;
+      }
+              a {
+                text-decoration: none;
+              }
+              
+              li {
+                list-style: none;
+              }  
+                h1{
+                    font-family: georgia;
+                    text-align: center;
+                    color: white;
+                }
+
+    .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .main {
+        margin-left: 160px;
+        padding: 0px 10px;
+    }
+
+    h1 {
+        font-family: Georgia;
+        text-align: center;
+        color: white;
+    }
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image:url('https://images3.alphacoders.com/918/91839.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }   
+            section .leftBox {
+                width: 100%;
+                height: 100%;
+                float: left;
+                padding: 50px;
+                box-sizing: border-box;
+            }   
+
+            section .leftBox .content {
+
+                color: #fff;
+                font-size:17px;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 40px;
+                transition: .5s;
+                text-align: justify;
+            }
+
+                section .leftBox .content h1 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 50px;
+                    text-transform: uppercase;
+                }
+                section .leftBox .content:hover {
+                    background: #8A4B08;}
+
+
+                    section .box {
+                      width: 50%;
+                      height: 50%;
+                      float: left;
+                      padding: 50px;
+                      box-sizing: border-box;
+                  }   
+      
+                  section .box .content {
+      
+                      color: #fff;
+                      font-size:17px;
+                      background: rgba(0, 0, 0, 0.5);
+                      padding: 40px;
+                      transition: .5s;
+                      text-align: justify;
+                  }
+      
+                      section .box .content h1 {
+                          margin: 0;
+                          padding: 0;
+                          font-size: 20px;
+                          text-transform: uppercase;
+                      }
+                      section .box .content:hover {
+                          background: #8A4B08;}  
+
+        
+        </style>   
+ </head>
+
+ <body>
+
+    <nav class="navbar">
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li> <a href="/">Home</a></li>
+            <form action="/" method="POST">
+              <button style="background:black; color:white;" name="btn" value="Contact">Contact</button>
+          </div>
+        </ul>
+      </nav>
+
+    <section>
+		<div class="leftBox">
+			<div class="content">
+				<h1>
+					STELLAR EVENT ORGANISERS
+				</h1>
+				<p>
+					Welcome to the world of Stellar Event Organisers, 
+					where innovation meets celebration! Founded by a 
+					group of passionate engineering graduates, Stellar Event Organisers is a dynamic event management 
+					company that's all about redefining the art of event planning using cutting-edge technology 
+					and the latest trends. <br>
+					At Stellar Event Organisers, we're not just event planners; 
+					we're dream weavers. We pride ourselves on turning your vision
+					 into a breathtaking reality, whether you're looking for a 
+					 grand gala or an intimate affair. Our team of creative minds and technical wizards collaborates
+					 seamlessly to ensure every detail is flawlessly executed.<br>
+                     Our commitment to excellence and attention to detail are at the heart of everything we do. From the initial planning stages to the final toast, we are by your side, ensuring that every element is flawlessly executed. With a passion for creativity and a wealth of experience, we turn your ideas into spectacular events that leave a lasting impression.
+                    <br>
+                    As we embark on this journey together, we encourage you to dream big,
+                    dare to be different, and let your imagination run wild. 
+                     Your event is a reflection of your love, your milestones, 
+                     and your stories, and we are here to help you tell them in the most 
+                     beautiful and memorable way.
+					Our mission is simple yet profound: to create stellar events that leave lasting memories.
+					 We do this by combining the art of traditional event planning with the science of modern technology. 
+					 From utilizing state-of-the-art event management software to crafting visually stunning 3D designs, 
+					 we strive for excellence
+					 in every aspect of event organization.<br>
+                     Thank you for entrusting us with the privilege of 
+                     being a part of your special moments. We look forward 
+                     to creating memories that will be cherished for a 
+                     lifetime.<br><br>
+
+                    Let the celebrations begin!
+				</p>
+			</div>
+		</div>
+
+    <div class="box">
+			<div class="content">
+				<h1>
+					WEDDING & BIRTHDAYS 
+				</h1><br><br>
+        <form action="/" method="POST">
+        <center>
+          <button style="background:black; color:white;" name="btn" value="view details"> view details</button>
+              
+        </center>
+      </form>
+      </div>
+    </div>
+
+     <div class="box">
+
+          <div class="content">
+            <h1>
+              MUSICAL CONCERTS
+            </h1><br><br>
+            <form action="/" method="POST">
+              <center>
+                <button style="background:black; color:white;" name="btn" value="view details2"> view details</button>
+                    
+              </center>
+            </form>
+          </div>
+        </div>
+
+        <div class="box">
+
+          <div class="content">
+            <h1>
+              TECH FESTS
+            </h1><br><br>
+            <form action="/" method="POST">
+              <center>
+                <button style="background:black; color:white;" name="btn" value="view details3"> view details</button>
+                    
+              </center>
+            </form>
+          </div>
+        </div>
+	</section>
+  
+
+
+  
+</body>
+
+</html>
